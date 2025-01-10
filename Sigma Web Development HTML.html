@@ -1,19 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sigma Web Development HTML</title>
+    <link rel="stylesheet" href="style.css">
     <meta name="description" content="This is Sigma Web Development HTML">
 </head>
+
 <body>
-    
+    <!-- Body -->
     <h1>Hello Heading one </h1>
     <h2>Hello heading two</h2>
     <h3>Hello Heading three</h3>
     <h4>Hello Heading four</h4>
     <h5>Hello Heading five</h5>
-    <h6>Hello heading six</h6>
-    
+    <h6>Hello <span style="color: red;">Six</span>&nbsp;&nbsp; &emsp;heading six</h6>
+    <p>Lorem ipsum <b>Bold Text </b>dolor sit amet consectetur adipisicing elit. Vel alias fugit doloremque tempore
+        vitae voluptatem nam
+        eaque ipsum <i>Itlic Text</i> ratione!
+    </p>
+    <div>
+        <h1>Div Tag is <em>Emphasis text </em>a Block Tag</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <img src="" alt="No Image">
+    </div>
+
+
+    <pre>
+        <strong>Important text </strong>hello my name is 
+              <b>Shirzad </b>Bilal
+    </pre>
+    <code>
+        <!-- used for code or source code -->
+      <!-- <html>Hello</html> -->
+    </code>
+    <!--  Sub and Super tags  -->
+    <h3>h<sub>2</sub>o</h3>
+    <h3>2<sup>2</sup>
+    </h3>
+
+    <!--  UnOrder List Using the list tags -->
+    <!-- Type= square, circle and disc -->
+    <ul type="square">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Services</li>
+        <li>blog</li>
+        <li>contact</li>
+    </ul>
+
+    <!-- Order List  -->
+    <!-- Type= I,i, A, a  start=value -- reversed -->
+
+    <ol type="A" start="" reversed>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Pear</li>
+        <li>Pink</li>
+        <li>Pinapple</li>
+    </ol>
+
+    <!-- Media Tags -->
+    <audio controls autoplay loop muted>
+        <source src="Images/audio.mp3" type="audio/mpeg">
+        <source src="Images/audio.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio src="images/audio.mp3" controls preload="auto" autoplay muted></audio>
+    <div>
+
+        <video src="Images/vid.mp4" controls width="400" height="200" autoplay>Video</video>
+    </div>
+    <div>
+        <img src="Images/car.jpg" alt="SEO for Video" width="200" height="200">
+
+    </div>
+    <Table border="1" align="center" cellpadding="5" cellspacing="5" width="600" height="400">
+        <thead bgcolor="black">
+            <tr>
+                <th>Home</th>
+                <th>Rent</th>
+                <th colspan="2">Price</th>
+            </tr>
+        </thead>
+        <tbody bgcolor="green">
+            <tr>
+                <td rowspan="2">Villa</td>
+                <td>3000</td>
+                <td colspan="2">10000</td>
+            </tr>
+            <td>Shared</td>
+            <td>300</td>
+            <td>30000</td>
+            <tr>
+
+            </tr>
+        </tbody>
+        <tfoot bgcolor="red">
+            <tr>
+                <td colspan="2">Appartment</td>
+                <td>200</td>
+                <td>11000</td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center">Total</td>
+            </tr>
+
+        </tfoot>
+    </Table>
+
+
+
+
+
+
+    <!-- End fo the HTML -->
+
 </body>
+
 </html>
