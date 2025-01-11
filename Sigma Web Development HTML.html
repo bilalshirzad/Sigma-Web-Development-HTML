@@ -7,6 +7,28 @@
     <title>Sigma Web Development HTML</title>
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="This is Sigma Web Development HTML">
+
+    <style>
+        h6 {
+            Color: blue;
+            font-size: 48px;
+        }
+    
+    form {
+      margin: 20px 0;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, textarea, select {
+      display: block;
+      margin-bottom: 15px;
+      padding: 5px;
+      width: 300px;
+    }
+
+    </style>
 </head>
 
 <body>
@@ -16,7 +38,8 @@
     <h1>Hello Heading one </h1>
     <h2>Hello heading two</h2>
     <h3>Hello Heading three</h3>
-    <h4>Hello Heading four</h4>
+    <h4 style="color: blueviolet; font-family: 'Times New Roman', Times, serif; font-size: 28px; font-weight: bold;">
+        Hello Heading four</h4>
     <h5>Hello Heading five</h5>
     <h6>Hello <span style="color: red;">Six</span>&nbsp;&nbsp; &emsp;heading six</h6>
     <p>Lorem ipsum <b>Bold Text </b>dolor sit amet consectetur adipisicing elit. Vel alias fugit doloremque tempore
@@ -205,6 +228,71 @@
     <br />
     <br />
 
+    <!-- Form with all input types -->
+<form>
+    <!-- Text Inputs -->
+    <label for="text">Text:</label>
+    <input type="text" id="text" placeholder="Enter text" maxlength="5">
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter password">
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+  
+    <label for="url">URL:</label>
+    <input type="url" id="url" placeholder="https://example.com">
+  
+    <label for="tel">Telephone:</label>
+    <input type="tel" id="tel" placeholder="123-456-7890">
+  
+    <label for="search">Search:</label>
+    <input type="search" id="search" placeholder="Search here">
+  
+    <!-- Numeric Inputs -->
+    <label for="number">Number:</label>
+    <input type="number" id="number" min="0" max="100" placeholder="Enter a number">
+  
+    <label for="range">Range:</label>
+    <input type="range" id="range" min="0" max="100" step="5">
+  
+    <!-- Date and Time Inputs -->
+    <label for="date">Date:</label>
+    <input type="date" id="date">
+  
+    <label for="month">Month:</label>
+    <input type="month" id="month">
+  
+    <label for="week">Week:</label>
+    <input type="week" id="week">
+  
+    <label for="time">Time:</label>
+    <input type="time" id="time">
+  
+    <label for="datetime-local">Datetime Local:</label>
+    <input type="datetime-local" id="datetime-local">
+  
+    <!-- File Inputs -->
+    <label for="file">File:</label>
+    <input type="file" id="file">
+  
+    <!-- Choice Inputs -->
+    <label>Checkbox:</label>
+    <input type="checkbox" id="check1"> Option 1
+    <input type="checkbox" id="check2"> Option 2
+  
+    <label >Radio Buttons:</label>
+    <input type="radio" name="radio" id="radio1"><label for="radio1">Option 1</label> 
+    <input type="radio" name="radio" id="radio2"> <label for="radio2">Option 2</label>
+  
+    <!-- Buttons -->
+    <label for="submit">Submit Button:</label>
+    <input type="submit" value="Submit">
+  
+    <label for="reset">Reset Button:</label>
+    <input type="reset" value="Reset">
+  </form>
+
     <!-- Form Elements and it's user  -->
 
     <form action="https:google.com" method="post">
@@ -223,33 +311,69 @@
             <div>
                 <label for="tel">Tel</label> <input type="tel" name="" id="" placeholder="Phone Number" />
             </div>
-<div>
-    <label for="password">Password</label> <input type="password" placeholder="Enter Password" value="Bilal" >
-</div>
-<div>
-<label for="checkbot">Checbox</label> <input type="checkbox" name="agree" value="yes" >
+            <div>
+                <label for="password">Password</label> <input type="password" placeholder="Enter Password"
+                    value="Bilal">
+            </div>
+            <div>
+                <label for="checkbot">Checbox</label> <input type="checkbox" name="agree" value="yes">
 
-</div>
+            </div>
 
-<textarea name="Comment" id="" placeholder="Massage " rows="5" cols="20"></textarea>
-<div>
-<input type="submit" value="Submit">
+            <textarea name="Comment" id="" placeholder="Massage " rows="5" cols="20"></textarea>
+            <div>
+                <input type="submit" value="Submit">
 
-</div>
-<div>
-    <input type="reset">
-    <button>js button </button>
-</div>
+            </div>
+            <div>
+                <input type="reset">
+                <button>js button </button>
+            </div>
         </fieldset>
     </form>
 
     <div>
         <label for="Gender">Gender</label>
-        <input type="radio" name="male" id="male" ><label for="male">Male</label>
+        <input type="radio" name="male" id="male"><label for="male">Male</label>
         <input type="radio" name="male" id="female"><label for="female">Female</label>
     </div>
-    
 
+    <div>
+
+        <label for="checkbox">Choice</label> <input type="checkbox" id="apple">
+        <label for="apple">Apple</label>
+        <input type="checkbox" id="pear">
+        <label for="pear">Pear</label>
+    </div>
+
+    <!-- Seclect Form Faild -->
+
+    <select >
+        <optgroup label="Citrus Fruits">
+          <option value="orange">Orange</option>
+          <option value="lemon">Lemon</option>
+          <option value="lime">Lime</option>
+        </optgroup>
+        <optgroup label="Berries">
+          <option value="strawberry">Strawberry</option>
+          <option value="blueberry">Blueberry</option>
+          <option value="raspberry">Raspberry</option>
+        </optgroup>
+        <optgroup label="Tropical Fruits">
+          <option value="mango" selected>Mango</option>
+          <option value="pineapple">Pineapple</option>
+          <option value="papaya">Papaya</option>
+        </optgroup>
+      </select>
+
+      <label for="time">Time</label> <input type="time" id="time"/>
+      <div>
+        <label for="date">Date</label> <input type="date" id="date"/>
+      </div>
+
+      <div>
+        <label for="datetime">Date Time</label> <input type="datetime-local">
+      </div>
     <!-- End fo the HTML -->
 
 </body>
